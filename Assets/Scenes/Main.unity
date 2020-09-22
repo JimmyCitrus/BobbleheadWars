@@ -541,6 +541,76 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 310322982}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374043295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ad74454c61f96e648ac608dc08ecf15e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2013507956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!59 &374043296
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374043295}
+  m_ConnectedBody: {fileID: 1682104153}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 0
+  m_ConnectedAnchor: {x: -2.06, y: 6.16, z: 0.16}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -25
+    max: 25
+    bounciness: 1
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
+--- !u!54 &374043297
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374043295}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &374043298
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374043295}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.36
+  m_Center: {x: 0.41, y: 2.7, z: -0.21}
 --- !u!1 &386223219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1481,22 @@ MonoBehaviour:
   bulletPrefab: {fileID: 6116944723456005634, guid: aab666051ae45c1478e15329746a4ae3,
     type: 3}
   launchPosition: {fileID: 1671737134}
+--- !u!54 &1682104153
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1682104151}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1757895581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1685,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2116621680}
     m_Modifications:
+    - target: {fileID: -7631188063097997835, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -5747004026419339717, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ad74454c61f96e648ac608dc08ecf15e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1654,10 +1750,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4080381476736221828, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: ad74454c61f96e648ac608dc08ecf15e,
         type: 3}
       propertyPath: m_Name
       value: BobbleMarine-Head
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1327140703394447509, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074411436420126004, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154821974900426979, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440925650130391298, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5545477042616774485, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921580445288126045, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158902216987080658, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421416397384994322, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111962883125049612, guid: ad74454c61f96e648ac608dc08ecf15e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad74454c61f96e648ac608dc08ecf15e, type: 3}
@@ -1678,7 +1829,7 @@ GameObject:
   - component: {fileID: 2116621680}
   - component: {fileID: 2116621682}
   - component: {fileID: 2116621681}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: SpaceMarine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1713,7 +1864,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 11.08
-  m_Radius: 2.5
+  m_Radius: 5.17
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1732,6 +1883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 50
+  head: {fileID: 374043297}
 --- !u!1 &2126655143
 GameObject:
   m_ObjectHideFlags: 0
