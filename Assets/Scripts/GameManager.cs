@@ -82,9 +82,19 @@ public class GameManager : MonoBehaviour
                 //Positions the alien at the spawn point
                 newAlien.transform.position = spawnLocation.transform.position;
 
+                //Gets a reference to the alien script
+                Alien alienScript = newAlien.GetComponent<Alien>();
+
+                //Sets target to marine's current position
+                alienScript.target = player.transform;
+
+                //Rotate the alien towards the marine
+                Vector3 targetRotation = new Vector3(player.transform.position.x, newAlien.transform.position.y, player.transform.position.z);
+                newAlien.transform.LookAt(targetRotation);
             }
         }
 
+        
        
     }
 }
