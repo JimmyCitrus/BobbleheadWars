@@ -18,11 +18,13 @@ public class Projectile : MonoBehaviour
 
     private void OnBecameInvisible()
     {
+        //If the bullet is invisible, delete it
         Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision collision)
     {
+        //If the bullet collides with anything, delete it
         Destroy(gameObject);
     }
 }

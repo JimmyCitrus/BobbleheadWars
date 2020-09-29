@@ -17,6 +17,7 @@ public class CameraMovement : MonoBehaviour
     {
         if (followTarget != null)
         {
+            //If the target exists, the camera follows the target's position
             transform.position = Vector3.Lerp(transform.position, followTarget.transform.position, Time.deltaTime * moveSpeed);
         }
     }
