@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - gunFire: {fileID: 8300000, guid: 5601eca1dfa29004bb6fa92fb60c7feb, type: 3}
+  - gunFire: {instanceID: 0}
   - upgradedGunFire: {instanceID: 0}
   - hurt: {instanceID: 0}
   - alienDeath: {instanceID: 0}

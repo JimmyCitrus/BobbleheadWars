@@ -45,4 +45,10 @@ public class SoundManager : MonoBehaviour
     {
         
     }
+
+    
+    public void PlayOneShot(AudioClip clip)
+    {
+        soundEffectAudio.PlayOneShot(SoundManager.Instance.alienDeath);
+    }
 }
