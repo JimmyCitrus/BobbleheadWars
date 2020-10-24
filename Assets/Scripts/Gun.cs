@@ -63,14 +63,14 @@ public class Gun : MonoBehaviour
         }
 
         //Choose which sound to play
-        /*if (isUpgraded)
+        if (isUpgraded)
         {
             audioSource.PlayOneShot(SoundManager.Instance.upgradedGunFire);
         }
         else
         {
             audioSource.PlayOneShot(SoundManager.Instance.gunFire);
-        }*/
+        }
     }
 
     //encapsulates the bullet creation process
